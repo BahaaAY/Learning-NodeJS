@@ -1,0 +1,23 @@
+{
+  "name": "learning-nodejs",
+  "version": "1.0.0",
+  "description": "Learning NodeJS from Maximilian Schwarzmüller NodeJS Udemy Course",
+  "main": "node-js-basics/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BahaaAY/Learning-NodeJS.git"
+  },
+  "author": "BahaaAY",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BahaaAY/Learning-NodeJS/issues"
+  },
+  "homepage": "https://github.com/BahaaAY/Learning-NodeJS#readme",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
