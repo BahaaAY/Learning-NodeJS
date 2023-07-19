@@ -5,7 +5,7 @@ const requestHandler = (req,res)=>{
         res.setHeader('Content-Type' , 'text/html');
     res.write('<html>');
     res.write('<head><title>My First Server Response!</title></head>');
-    res.write('<body><h1>Welcome</h1> <form action= "/message"method="POST"><input name="message" type="text"><button type="submit">Send</button></form></body>');
+    res.write('<body><h1>Welcome!</h1> <form action= "/message"method="POST"><input name="message" type="text"><button type="submit">Send</button></form></body>');
     res.write('</html>');
     return res.end();
     }
