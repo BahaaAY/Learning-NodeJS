@@ -5,11 +5,12 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start" : "nodemon express-js/assignment2/app.js"
+    "start": "nodemon express-js/assignment2/app.js"
   },
   "author": "BahaaAY",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.20.2",
     "express": "^4.18.2"
   },
   "devDependencies": {
