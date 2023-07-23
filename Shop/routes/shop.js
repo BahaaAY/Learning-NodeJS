@@ -7,11 +7,13 @@ const router = express.Router();
 
 const rootDir = require('./../util/path');
 
+const adminData = require('./admin');
+
 
 
 
 router.get('/',(req,res,next)=>{
-    res.render('shop');
+    res.render('shop',{products : adminData.products, pageTitle: 'Shop'});
 });
 
 
