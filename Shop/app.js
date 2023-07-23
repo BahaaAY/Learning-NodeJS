@@ -10,13 +10,15 @@ const rootDir = require('./util/path');
 
 const app = express();
 
-app.engine('hbs', expressHBS.engine({extname: '.hbs'}));
-app.set('view engine', 'hbs');
-app.set('views', 'views/handlebars/');
+// app.engine('hbs', expressHBS.engine({extname: '.hbs'})); //for handelebars
+// app.set('view engine', 'hbs');
+// app.set('views', 'views/handlebars/');
 
 // app.set('view engine','pug'); //For PUG Templating Engine
 // app.set('views', 'views/pug');
 
+app.set('view engine','ejs'); 
+app.set('views', 'views');
 
 
 app.use(bodyParser.urlencoded({extended :false}));
