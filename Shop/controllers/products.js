@@ -12,7 +12,11 @@ exports.getAddProduct = (req,res,next)=>{
 }
 
 exports.getProducts = (req,res,next)=>{
+    Product.fetchAll((products)=>{
+        
+    res.render('shop',{products :products, pageTitle: 'Shop', shopPage: true});
+        
+    });
 
-    res.render('shop',{products : Product.fetchAll(), pageTitle: 'Shop', shopPage: true});
 }
 
